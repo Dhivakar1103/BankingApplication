@@ -1,0 +1,83 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff4d4d, #4d79ff); /* Red to Blue Gradient */
+    background-size: 200% 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.close-account-container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #4d79ff; /* Blue color */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+    color: #4d79ff; /* Blue color */
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    background-color: #d32f2f; /* Red color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+}
+
+.no-button {
+    display: inline-block;
+    background-color: #4d79ff; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.no-button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+/* Adding icons to the buttons */
+input[type="submit"]::before {
+    content: '\f2ed'; /* FontAwesome icon for 'delete' */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.no-button::before {
+    content: '\f00d'; /* FontAwesome icon for 'close' */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+/* Ensure you include FontAwesome in your HTML file */

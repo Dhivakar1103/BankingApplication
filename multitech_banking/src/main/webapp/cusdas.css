@@ -1,0 +1,70 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff4d4d, #4d79ff); /* Red to Blue Gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.dashboard-container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #4d79ff; /* Blue color */
+    margin-bottom: 20px;
+}
+
+.account-details {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333; /* Darker text color */
+}
+
+.dashboard-nav a {
+    display: inline-block;
+    background-color: #00796b; /* Teal color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-nav a:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+/* Adding icons to the navigation links */
+.dashboard-nav a::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.dashboard-nav a[href*="registerCustomer.jsp"]::before {
+    content: '\f234'; /* FontAwesome icon for 'user-plus' */
+}
+
+.dashboard-nav a[href*="viewCustomers.jsp"]::before {
+    content: '\f06e'; /* FontAwesome icon for 'eye' */
+}
+
+.dashboard-nav a[href*="logout.jsp"]::before {
+    content: '\f2f5'; /* FontAwesome icon for 'sign-out-alt' */
+}
+
+/* Ensure you include FontAwesome in your HTML file */
